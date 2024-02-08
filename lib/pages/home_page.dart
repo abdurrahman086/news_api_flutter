@@ -1,5 +1,6 @@
-import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
+// import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:news_api/componets/news.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,24 +19,12 @@ class _HomePageState extends State<HomePage> {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Row(
-              children: [
-                SizedBox(
-                  width: 150,
-                  child: AspectRatio(
-                    aspectRatio: 4 / 3,
-                    child: FancyShimmerImage(
-                        boxFit: BoxFit.cover,
-                        imageUrl:
-                            'https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/07/31221845/fungsi-fakta-dalam-berita.jpeg'),
-                  ),
-                ),
-                const Expanded(
-                  child: Text(
-                      'Sunt ut officia incididunt cupidatat anim sint adipisicing ad. Deserunt anim ut reprehenderit non velit. Ipsum elit eu consectetur minim qui. Velit occaecat nisi sit reprehenderit ea elit laboris incididunt in nostrud.'),
-                )
-              ],
-            )
+            News(
+              title:
+                  "Reprehenderit in proident consequat non aute aliquip id laboris sint dolore deserunt officia et. Dolor elit exercitation anim eu aliquip ipsum consectetur. Ea ea in elit cupidatat reprehenderit aliquip laboris. Ullamco culpa elit consectetur aute ex ipsum ut aliquip culpa veniam minim dolore. Aliqua minim et sunt nostrud eiusmod do. In ea nulla tempor fugiat exercitation ad eu deserunt quis ad reprehenderit deserunt.",
+              image:
+                  'https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/07/31221845/fungsi-fakta-dalam-berita.jpeg',
+            ),
           ],
         ),
       )),
