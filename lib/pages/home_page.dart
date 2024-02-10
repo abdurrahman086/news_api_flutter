@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
         },
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.amber,
             title: const Text('Berita Terkini'),
             actions: [
               Padding(

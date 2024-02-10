@@ -18,6 +18,7 @@ class _SearchPageState extends State<SearchPage> {
         builder: (BuildContext context, news, Widget? child) {
       return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.amber,
           title: const Text('Cari Berita'),
         ),
         body: SingleChildScrollView(
